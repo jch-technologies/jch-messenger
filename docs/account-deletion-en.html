@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion &ndash; JCH Messenger</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.7; padding: 24px; max-width: 800px; margin: 0 auto; }
+        h1 { font-size: 24px; margin-bottom: 8px; color: #58a6ff; }
+        h2 { font-size: 18px; margin-top: 32px; margin-bottom: 8px; color: #58a6ff; }
+        p, ul, ol { margin-bottom: 16px; }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 4px; }
+        a { color: #58a6ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .subtitle { color: #8b949e; margin-bottom: 32px; }
+        .updated { color: #8b949e; font-size: 13px; margin-top: 40px; border-top: 1px solid #21262d; padding-top: 16px; }
+        .nav { margin-bottom: 24px; font-size: 14px; }
+        .steps { background: #161b22; border: 1px solid #21262d; border-radius: 8px; padding: 20px; }
+        .steps ol { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+
+<p class="nav"><a href="index.html">&larr; Overview</a> | <a href="account-deletion.html">Deutsch</a></p>
+
+<h1>Delete Account and Data</h1>
+<p class="subtitle">JCH Messenger &ndash; Instructions for deleting your account and data</p>
+
+<h2>App Name and Developer</h2>
+<p>
+    <strong>App:</strong> JCH Messenger<br>
+    <strong>Package name:</strong> com.jch.jch_messenger (Android), com.jch.jchMessenger (iOS)<br>
+    <strong>Developer:</strong> Joachim Christof Huben<br>
+    <strong>Contact:</strong> <a href="mailto:mail@jch-technologies.de">mail@jch-technologies.de</a>
+</p>
+
+<h2>Deletion directly in the app (recommended)</h2>
+
+<div class="steps">
+    <ol>
+        <li>Open JCH Messenger and sign in to your account</li>
+        <li>Tap your profile picture in the top-left to open <strong>Settings</strong></li>
+        <li>Select <strong>Account</strong></li>
+        <li>Scroll down to <strong>Delete Account</strong></li>
+        <li>Confirm the deletion with your password</li>
+    </ol>
+</div>
+
+<p>Deletion happens immediately. You will be removed from all rooms and signed out automatically.</p>
+
+<h2>Deletion via email (if you can no longer access the app)</h2>
+
+<p>If you can no longer access your account (e.g. forgotten password, lost device), you can request deletion by email:</p>
+
+<p>
+    <strong>To:</strong> <a href="mailto:mail@jch-technologies.de?subject=Account%20Deletion%20JCH%20Messenger">mail@jch-technologies.de</a><br>
+    <strong>Subject:</strong> Account Deletion JCH Messenger<br>
+    <strong>Body:</strong> Your username (e.g. <code>@example:messenger.jch-technologies.de</code>) and a brief note that you wish to have your account deleted
+</p>
+
+<p>For identity verification you may be asked to send the request from an email address associated with your account. Deletion is processed within 30 days of receiving your request.</p>
+
+<h2>Which data is deleted?</h2>
+
+<p><strong>Immediately and permanently deleted:</strong></p>
+<ul>
+    <li>Your account (username, password hash)</li>
+    <li>Your profile (display name, avatar)</li>
+    <li>Your device sessions and push notification tokens</li>
+    <li>Your personal settings (themes, stickers, favourite rooms)</li>
+    <li>Your contact list (within the app)</li>
+    <li>Your own content in private 1:1 rooms where only you participated</li>
+    <li>Your verification data for the anti-bot protection (App Attest / Play Integrity hashes)</li>
+</ul>
+
+<h2>Which data is technically retained?</h2>
+
+<p><strong>Not deleted:</strong></p>
+<ul>
+    <li>Messages you sent in <strong>group rooms or communities</strong> with other users. These are part of the room history and remain visible to other room participants for technical reasons &ndash; however <strong>without any link</strong> to your (now deleted) account. Your display name is replaced by an anonymized identifier.</li>
+    <li>Encrypted media attachments (images, videos, audio messages) that you shared in such rooms. These also remain encrypted in the server's media store, but are no longer linked to your account.</li>
+</ul>
+
+<p>This limitation arises from the decentralized design of Matrix-based messengers: anything you wrote into a shared room is part of the conversation of the other participants and cannot be retroactively recalled &ndash; similar to a message in a group chat conversation.</p>
+
+<h2>Backup data retention</h2>
+
+<p>Server-side database backups, which are routinely created for emergency restore, may contain deleted accounts for a maximum of <strong>30 days</strong> after deletion. These backups are automatically overwritten after this period.</p>
+
+<p>Backups are not actively searched or analyzed and serve solely for technical disaster recovery.</p>
+
+<h2>No third-party sharing</h2>
+
+<p>Since JCH Messenger is a closed platform and does not share data with third parties (no advertising networks, no analytics providers, no cloud storage outside its own server), no third parties need to be notified upon deletion. Your data resides exclusively on the server operated by Joachim Christof Huben.</p>
+
+<h2>Questions?</h2>
+
+<p>If you have questions about deletion or how your data is handled, contact us at <a href="mailto:mail@jch-technologies.de">mail@jch-technologies.de</a>.</p>
+
+<p>For more information see our <a href="privacy-en.html">Privacy Policy</a>.</p>
+
+<p class="updated">Last updated: April 2026 | <a href="index.html">Overview</a> | <a href="privacy-en.html">Privacy</a> | <a href="imprint-en.html">Legal Notice</a></p>
+
+</body>
+</html>
